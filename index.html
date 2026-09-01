@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishiki | Online Terapi & Eksistentiel Dialog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBg: '#FAF9F6',
+            brandCard: '#F5F4F0',
+            brandDark: '#1A1A1A',
+            brandMuted: '#5A5A5A',
+            brandBorder: '#E5E3DC'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brandBg text-brandDark font-sans antialiased selection:bg-[#EAE8E1]">
+
+  <!-- Navegación Minimalista -->
+  <header class="border-b border-brandBorder/60 bg-brandBg/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <a href="/" class="font-serif text-2xl tracking-widest text-brandDark uppercase">Ishiki</a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm tracking-wide text-brandMuted">
+        <a href="#om" class="hover:text-brandDark transition-colors">Mød mig</a>
+        <a href="#ydelser" class="hover:text-brandDark transition-colors">Terapeutisk Samtale</a>
+        <a href="#reflektioner" class="hover:text-brandDark transition-colors">Reflektioner</a>
+        <a href="#spejle" class="hover:text-brandDark transition-colors">Eksistentielle Spejle</a>
+        <a href="#kontakt" class="border border-brandDark px-4 py-2 text-brandDark hover:bg-brandDark hover:text-white transition-colors">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Portada / Hero -->
+    <section class="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
+      <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-4">Online Psykologisk Terapi & Filosofisk Refleksion</span>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-brandDark leading-tight font-normal mb-8">
+        Et roligt rum til fordybelse, klarhed og personlig forandring.
+      </h1>
+      <p class="text-lg text-brandMuted max-w-2xl mx-auto font-light leading-relaxed mb-10">
+        Integrativ terapi der forener eksistentiel indsigt, litterær refleksion og målrettede terapeutiske samtaler. Tilpasset dig, uanset hvor du befinder dig.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#kontakt" class="bg-brandDark text-white px-8 py-3.5 text-sm tracking-wider hover:bg-black transition-colors">
+          Bestil en gratis forsamtale
+        </a>
+        <a href="#reflektioner" class="border border-brandBorder px-8 py-3.5 text-sm tracking-wider text-brandDark hover:border-brandDark transition-colors">
+          Læs refleksioner
+        </a>
+      </div>
+    </section>
+
+    <!-- Pilares de Enfoque -->
+    <section id="ydelser" class="max-w-6xl mx-auto px-6 py-20 border-t border-brandBorder/60">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-brandCard p-8 border border-brandBorder/40">
+          <span class="font-serif text-3xl text-brandMuted/40 block mb-4">01</span>
+          <h2 class="font-serif text-2xl text-brandDark mb-3">Terapeutisk Samtale</h2>
+          <p class="text-sm text-brandMuted leading-relaxed font-light">
+            Individuelle samtaler med fokus på livskriser, angst, eksistentiel tvivl og personlig vækst i et fortroligt rum.
+          </p>
+        </div>
+
+        <div class="bg-brandCard p-8 border border-brandBorder/40">
+          <span class="font-serif text-3xl text-brandMuted/40 block mb-4">02</span>
+          <h2 class="font-serif text-2xl text-brandDark mb-3">Terapeutisk Skrivning</h2>
+          <p class="text-sm text-brandMuted leading-relaxed font-light">
+            Strukturerede skriftlige processer, hvor ord og refleksioner bliver til konkrete redskaber for selvindsigt.
+          </p>
+        </div>
+
+        <div class="bg-brandCard p-8 border border-brandBorder/40">
+          <span class="font-serif text-3xl text-brandMuted/40 block mb-4">03</span>
+          <h2 class="font-serif text-2xl text-brandDark mb-3">Eksistentielle Spejle</h2>
+          <p class="text-sm text-brandMuted leading-relaxed font-light">
+            Filosofiske og litterære perspektiver, der kaster lys over menneskets grundvilkår, relationer og mening.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="border-t border-brandBorder/60 bg-brandBg mt-24 py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center text-xs text-brandMuted tracking-wider">
+      <p class="uppercase tracking-widest mb-2">Ishiki &copy; 2026</p>
+      <p class="font-light">Online Terapi & Eksistentiel Dialog</p>
+    </div>
+  </footer>
+
+</body>
+</html>
