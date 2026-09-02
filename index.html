@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ishiki | Online Terapi & Eksistentiel Dialog</title>
+  <title>Ishiki | Humanistisk-eksistentiel Online Terapi</title>
+  <meta name="description" content="Online terapi og eksistentiel dialog. Et roligt rum til fordybelse, klarhed og personlig forandring hos Marcelo Larrosa.">
+  
+  <!-- Tipografías de alta gama -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -14,10 +18,10 @@
         extend: {
           colors: {
             brandBg: '#FAF9F6',
-            brandCard: '#F5F4F0',
+            brandCard: '#F4F2EB',
             brandDark: '#1A1A1A',
-            brandMuted: '#5A5A5A',
-            brandBorder: '#E5E3DC'
+            brandMuted: '#5C5B57',
+            brandBorder: '#E6E4DC'
           },
           fontFamily: {
             serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
@@ -31,14 +35,14 @@
 <body class="bg-brandBg text-brandDark font-sans antialiased selection:bg-[#EAE8E1]">
 
   <!-- Navegación Minimalista -->
-  <header class="border-b border-brandBorder/60 bg-brandBg/90 backdrop-blur-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-      <a href="/" class="font-serif text-2xl tracking-widest text-brandDark uppercase">Ishiki</a>
-      <nav class="hidden md:flex items-center space-x-8 text-sm tracking-wide text-brandMuted">
+  <header class="border-b border-brandBorder/70 bg-brandBg/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="font-serif text-2xl tracking-[0.2em] text-brandDark uppercase">Ishiki</a>
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest text-brandMuted">
         <a href="#om" class="hover:text-brandDark transition-colors">Mød mig</a>
-        <a href="#ydelser" class="hover:text-brandDark transition-colors">Terapeutisk Samtale</a>
+        <a href="#tilgang" class="hover:text-brandDark transition-colors">Tilgang</a>
+        <a href="#ydelser" class="hover:text-brandDark transition-colors">Terapeutisk Skrivning</a>
         <a href="#reflektioner" class="hover:text-brandDark transition-colors">Reflektioner</a>
-        <a href="#spejle" class="hover:text-brandDark transition-colors">Eksistentielle Spejle</a>
         <a href="#kontakt" class="border border-brandDark px-4 py-2 text-brandDark hover:bg-brandDark hover:text-white transition-colors">Kontakt</a>
       </nav>
     </div>
@@ -47,58 +51,209 @@
   <main>
     <!-- Portada / Hero -->
     <section class="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
-      <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-4">Online Psykologisk Terapi & Filosofisk Refleksion</span>
+      <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-5">Humanistisk-Eksistentiel Online Terapi</span>
       <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-brandDark leading-tight font-normal mb-8">
-        Et roligt rum til fordybelse, klarhed og personlig forandring.
+        Hvad kan du gøre lige nu i dit liv, for at du om fem år ikke ser tilbage med fortrydelse?
       </h1>
-      <p class="text-lg text-brandMuted max-w-2xl mx-auto font-light leading-relaxed mb-10">
-        Integrativ terapi der forener eksistentiel indsigt, litterær refleksion og målrettede terapeutiske samtaler. Tilpasset dig, uanset hvor du befinder dig.
+      <p class="text-lg sm:text-xl text-brandMuted max-w-2xl mx-auto font-light leading-relaxed mb-10">
+        Et roligt rum til fordybelse, klarhed og autentisk forandring. Online samtaler og skrivebaseret terapi tilpasset dig, uanset hvor du befinder dig.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#kontakt" class="bg-brandDark text-white px-8 py-3.5 text-sm tracking-wider hover:bg-black transition-colors">
+        <a href="#kontakt" class="bg-brandDark text-white px-8 py-3.5 text-xs uppercase tracking-widest hover:bg-black transition-colors">
           Bestil en gratis forsamtale
         </a>
-        <a href="#reflektioner" class="border border-brandBorder px-8 py-3.5 text-sm tracking-wider text-brandDark hover:border-brandDark transition-colors">
-          Læs refleksioner
+        <a href="#tilgang" class="border border-brandBorder px-8 py-3.5 text-xs uppercase tracking-widest text-brandDark hover:border-brandDark transition-colors">
+          Læs om tilgangen
         </a>
       </div>
     </section>
 
-    <!-- Pilares de Enfoque -->
-    <section id="ydelser" class="max-w-6xl mx-auto px-6 py-20 border-t border-brandBorder/60">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div class="bg-brandCard p-8 border border-brandBorder/40">
-          <span class="font-serif text-3xl text-brandMuted/40 block mb-4">01</span>
-          <h2 class="font-serif text-2xl text-brandDark mb-3">Terapeutisk Samtale</h2>
-          <p class="text-sm text-brandMuted leading-relaxed font-light">
-            Individuelle samtaler med fokus på livskriser, angst, eksistentiel tvivl og personlig vækst i et fortroligt rum.
+    <!-- Mød mig (Con tu foto sentado) -->
+    <section id="om" class="max-w-6xl mx-auto px-6 py-24 border-t border-brandBorder/60">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5">
+          <div class="relative overflow-hidden bg-brandCard border border-brandBorder/40">
+            <img 
+              src="Marcelo%20Larrosa%20-%20Terapeut%20hos%20Online%20Terapi%20Ishiki%20-%20sidder%20pa%CC%8A%20stolen.png" 
+              alt="Marcelo Larrosa - Eksistentiel-humanistisk terapeut hos Ishiki" 
+              class="w-full h-auto object-cover grayscale contrast-[1.05]"
+            >
+          </div>
+        </div>
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block">Eksistentiel-humanistisk terapeut</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal">Mød mig — Marcelo Larrosa</h2>
+          <p class="text-brandMuted leading-relaxed font-light">
+            Jeg har boet i Danmark siden 1995 og har en dyb fortrolighed med den danske kultur og det menneskelige livsgrundlag her. Min terapeutiske praksis er funderet i en naturlig nysgerrighed på verden og mennesket; jeg er optaget af at udforske de unikke personlige fortællinger, der former os.
+          </p>
+          <p class="text-brandMuted leading-relaxed font-light">
+            Min faglige baggrund forener humaniora og psykologi: cand. mag. fra Københavns Universitet, tre mastergrader inden for humanistisk, eksistentiel og korttidsterapi, samt videregående psykologistudier. I mit terapeutiske arbejde forener jeg teoretisk dybde med et trygt, fortroligt rum, hvor der er plads til din personlige udvikling.
+          </p>
+          <div class="pt-2">
+            <a href="#kontakt" class="inline-block border-b border-brandDark pb-1 text-xs uppercase tracking-widest text-brandDark hover:text-brandMuted transition-colors">
+              Tag det første skridt mod vores samtale &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tilgangen hos Ishiki -->
+    <section id="tilgang" class="bg-brandCard border-y border-brandBorder/60 py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-3">Mennesket før diagnosen</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal">En terapeutisk ramme skabt til refleksion og frihed</h2>
+          <p class="text-brandMuted font-light mt-4 leading-relaxed">
+            Din smerte er ikke et tegn på, at du er i stykker; det er en del af det at være menneske. Hos Ishiki mødes vi som ligeværdige medrejsende i et fortroligt rum uden kliniske kasser.
           </p>
         </div>
 
-        <div class="bg-brandCard p-8 border border-brandBorder/40">
-          <span class="font-serif text-3xl text-brandMuted/40 block mb-4">02</span>
-          <h2 class="font-serif text-2xl text-brandDark mb-3">Terapeutisk Skrivning</h2>
-          <p class="text-sm text-brandMuted leading-relaxed font-light">
-            Strukturerede skriftlige processer, hvor ord og refleksioner bliver til konkrete redskaber for selvindsigt.
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-brandBg p-8 border border-brandBorder/60">
+            <span class="font-serif text-2xl text-brandMuted/40 block mb-4">01</span>
+            <h3 class="font-serif text-xl text-brandDark mb-3">Din frihed som udgangspunkt</h3>
+            <p class="text-sm text-brandMuted font-light leading-relaxed">
+              Jeg tilbyder ikke færdige facitlister eller standardråd. De væsentligste svar bor i dig selv, og mit mål er at støtte dig i at genfinde magten over dit eget liv.
+            </p>
+          </div>
+
+          <div class="bg-brandBg p-8 border border-brandBorder/60">
+            <span class="font-serif text-2xl text-brandMuted/40 block mb-4">02</span>
+            <h3 class="font-serif text-xl text-brandDark mb-3">Nærvær på tværs af skærmen</h3>
+            <p class="text-sm text-brandMuted font-light leading-relaxed">
+              Den digitale skærm er ikke en barriere, men en tryg og fleksibel bro. Gennem autentisk nærvær skaber vi et rum, hvor du bliver mødt og hørt præcis, som du er.
+            </p>
+          </div>
+
+          <div class="bg-brandBg p-8 border border-brandBorder/60">
+            <span class="font-serif text-2xl text-brandMuted/40 block mb-4">03</span>
+            <h3 class="font-serif text-xl text-brandDark mb-3">Modet til at være undervejs</h3>
+            <p class="text-sm text-brandMuted font-light leading-relaxed">
+              Forandring er en levende proces. Vi ser ikke tilværelsen som noget, der skal "repareres", men som en kontinuerlig udforskning af mening, værdier og relationer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terapeutisk Skrivning & Samtale -->
+    <section id="ydelser" class="max-w-6xl mx-auto px-6 py-24">
+      <div class="max-w-3xl mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-3">Metode & Fordybelse</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal">Terapeutisk Skrivning & Samtale</h2>
+        <p class="text-brandMuted font-light mt-4 leading-relaxed">
+          Kombinér den personlige fordybelse i skriften med professionelle online konsultationer. En fleksibel proces, hvor du kan skrive, når det passer dig bedst, og opbygge et varigt arkiv over din personlige udvikling.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="border border-brandBorder/80 p-10 bg-brandBg">
+          <h3 class="font-serif text-2xl text-brandDark mb-3">Forløbet i praksis</h3>
+          <ul class="space-y-4 text-sm text-brandMuted font-light mt-6">
+            <li class="flex items-start">
+              <span class="text-brandDark mr-3">&mdash;</span>
+              <span><strong>Opstart & Afklaring:</strong> Første online samtale via Google Meet til at indkredse dine vigtigste temaer.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brandDark mr-3">&mdash;</span>
+              <span><strong>Skriftlig proces:</strong> Du skriver dine breve i eget tempo og modtager grundige, faglige refleksioner inden for 48–72 timer.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-brandDark mr-3">&mdash;</span>
+              <span><strong>Midtvejs- & Slutsamtaler:</strong> Online møder undervejs og ved afslutningen til at forankre dine redskaber og indsigter.</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="bg-brandCard p-8 border border-brandBorder/40">
-          <span class="font-serif text-3xl text-brandMuted/40 block mb-4">03</span>
-          <h2 class="font-serif text-2xl text-brandDark mb-3">Eksistentielle Spejle</h2>
-          <p class="text-sm text-brandMuted leading-relaxed font-light">
-            Filosofiske og litterære perspektiver, der kaster lys over menneskets grundvilkår, relationer og mening.
+        <div class="border border-brandBorder/80 p-10 bg-brandCard flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-2xl text-brandDark mb-3">Start med en uforpligtende samtale</h3>
+            <p class="text-sm text-brandMuted font-light leading-relaxed mt-4">
+              Det første skridt kræver blot, at du sender en kort besked. Hvis jeg vurderer, at jeg er den rette til at støtte dig, inviterer jeg dig til en gratis 30-minutters forsamtale over video for at afstemme kemi og forventninger.
+            </p>
+          </div>
+          <div class="mt-8">
+            <a href="#kontakt" class="inline-block bg-brandDark text-white px-8 py-3.5 text-xs uppercase tracking-widest hover:bg-black transition-colors">
+              Book en afklarende samtale
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflektioner & Essays -->
+    <section id="reflektioner" class="max-w-6xl mx-auto px-6 py-24 border-t border-brandBorder/60">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-3">Perspektiver</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal">Reflektioner & Eksistentielle Spejle</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <article class="border border-brandBorder/60 p-8 bg-brandCard/50">
+          <span class="text-xs uppercase tracking-widest text-brandMuted block mb-3">Essay</span>
+          <h3 class="font-serif text-2xl text-brandDark mb-4">Det ideelle jegs tyranni: Når selvkrav kvæler autenticiteten</h3>
+          <p class="text-sm text-brandMuted font-light leading-relaxed mb-6">
+            En undersøgelse af den moderne udmattelse og den ontologiske slitage, der skabes af indre krav. Med afsæt i Byung-Chul Han og Carl Rogers analyseres det, hvordan ubetinget accept baner vejen for en mere nærværende tilværelse.
           </p>
+          <span class="text-xs uppercase tracking-widest text-brandDark border-b border-brandDark pb-1">Kommer snart i arkivet</span>
+        </article>
+
+        <article class="border border-brandBorder/60 p-8 bg-brandCard/50">
+          <span class="text-xs uppercase tracking-widest text-brandMuted block mb-3">Refleksion</span>
+          <h3 class="font-serif text-2xl text-brandDark mb-4">Den sociale dimension af mening: Ikigai som forbindelsen til den anden</h3>
+          <p class="text-sm text-brandMuted font-light leading-relaxed mb-6">
+            Hvordan finder vi retning midt i ensomhed og støj? En udforskning af det japanske Ikigai-begreb set gennem forbindelsen til relationer, nærvær og personlig modstandskraft.
+          </p>
+          <span class="text-xs uppercase tracking-widest text-brandDark border-b border-brandDark pb-1">Kommer snart i arkivet</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontakt / Booking -->
+    <section id="kontakt" class="bg-brandCard border-t border-brandBorder/60 py-24">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-3">Tag kontakt</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal mb-6">Klar til det første skridt?</h2>
+        <p class="text-brandMuted font-light leading-relaxed mb-10">
+          Det kræver mod at række ud. Du behøver ikke have en forkromet forklaring – skriv blot kort om din situation. Alt behandles med 100 % fortrolighed og tavshedspligt.
+        </p>
+
+        <div class="bg-brandBg border border-brandBorder/80 p-8 sm:p-10 text-left">
+          <form action="mailto:kontakt@ishiki.dk" method="POST" enctype="text/plain" class="space-y-6">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Dit Navn</label>
+              <input type="text" name="navn" required class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark">
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Din E-mail</label>
+              <input type="email" name="email" required class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark">
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Hvad ønsker du støtte til?</label>
+              <textarea name="besked" rows="4" required placeholder="Beskriv kort din situation..." class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-brandDark text-white py-4 text-xs uppercase tracking-widest hover:bg-black transition-colors">
+              Send henvendelse
+            </button>
+          </form>
+          <div class="mt-6 pt-6 border-t border-brandBorder/60 text-center">
+            <p class="text-xs text-brandMuted">
+              Eller skriv direkte til mig på: <a href="mailto:kontakt@ishiki.dk" class="text-brandDark underline">kontakt@ishiki.dk</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Pie de página -->
-  <footer class="border-t border-brandBorder/60 bg-brandBg mt-24 py-12">
+  <!-- Footer -->
+  <footer class="border-t border-brandBorder/60 bg-brandBg py-12">
     <div class="max-w-6xl mx-auto px-6 text-center text-xs text-brandMuted tracking-wider">
-      <p class="uppercase tracking-widest mb-2">Ishiki &copy; 2026</p>
-      <p class="font-light">Online Terapi & Eksistentiel Dialog</p>
+      <p class="font-serif text-lg text-brandDark uppercase tracking-[0.2em] mb-2">Ishiki</p>
+      <p class="font-light">Online Terapi & Eksistentiel Dialog &copy; 2026</p>
     </div>
   </footer>
 
