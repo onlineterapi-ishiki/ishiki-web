@@ -58,12 +58,9 @@
       <p class="text-sm uppercase tracking-[0.2em] text-brandMuted font-light mb-12">
         Humanistisk-eksistentiel online terapi
       </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <div class="flex justify-center">
         <a href="#kontakt" class="bg-brandDark text-white px-8 py-3.5 text-xs uppercase tracking-widest hover:bg-black transition-colors">
           Bestil en gratis forsamtale
-        </a>
-        <a href="#fokus" class="border border-brandBorder px-8 py-3.5 text-xs uppercase tracking-widest text-brandDark hover:border-brandDark transition-colors">
-          Læs om tilgangen
         </a>
       </div>
     </section>
@@ -232,7 +229,7 @@
       </a>
     </section>
 
-    <!-- Pris & Booking -->
+    <!-- Pris -->
     <section id="pris" class="bg-brandDark text-brandBg py-24">
       <div class="max-w-3xl mx-auto px-6 text-center">
         <span class="text-xs uppercase tracking-[0.25em] text-white/50 block mb-4">Pris: 900 kr.</span>
@@ -254,10 +251,57 @@
         </div>
 
         <div class="mt-12">
-          <a id="kontakt" href="kontakt.html" class="inline-block bg-brandBg text-brandDark px-8 py-4 text-xs uppercase tracking-widest hover:bg-[#EAE8E1] transition-colors">
+          <a href="#kontakt" class="inline-block bg-brandBg text-brandDark px-8 py-4 text-xs uppercase tracking-widest hover:bg-[#EAE8E1] transition-colors">
             Start din henvendelse
           </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Kontakt Form -->
+    <section id="kontakt" class="bg-brandCard border-t border-brandBorder/60 py-24">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-3">Tag kontakt</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal mb-8">Klar til det første skridt?</h2>
+        
+        <div class="text-brandMuted font-light leading-relaxed mb-12 space-y-4 text-left sm:text-center">
+          <p>
+            Det kræver mod at række ud og sætte ord på det, der foregår i dit indre. Denne kontaktform er ikke blot en praktisk indgang, men begyndelsen på et trygt rum, hvor din stemme har betydning.
+          </p>
+          <p>
+            Jeg inviterer dig til at skrive præcis det, du føler, tænker eller har brug for at dele i dette øjeblik. Du behøver ikke at have de "rigtige" ord eller en færdig forklaring; skriv frit og uden filter. Jeg læser din besked med dyb respekt og nærvær, og jeg vender tilbage til dig hurtigst muligt for at aftale vores videre vej.
+          </p>
+        </div>
+
+        <!-- Caja de formulario blanca -->
+        <div class="bg-brandBg border border-brandBorder/80 p-8 sm:p-12 text-left">
+          <form action="mailto:kontakt@ishiki.dk" method="POST" enctype="text/plain" class="space-y-6">
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brandMuted mb-2">Dit Navn</label>
+              <input type="text" name="Navn" required class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors">
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brandMuted mb-2">Din E-mail</label>
+              <input type="email" name="Email" required class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors">
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brandMuted mb-2">Hvad ønsker du støtte til?</label>
+              <textarea name="Besked" rows="5" required placeholder="Beskriv kort din situation..." class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors resize-y"></textarea>
+            </div>
+            <div class="pt-4">
+              <button type="submit" class="w-full bg-brandDark text-white py-4 text-xs uppercase tracking-widest hover:bg-black transition-colors">
+                Send henvendelse
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-8 pt-6 border-t border-brandBorder/60 text-center">
+            <p class="text-sm text-brandMuted font-light">
+              Eller skriv direkte til mig på: <a href="mailto:kontakt@ishiki.dk" class="text-brandDark underline hover:text-brandMuted transition-colors">kontakt@ishiki.dk</a>
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
