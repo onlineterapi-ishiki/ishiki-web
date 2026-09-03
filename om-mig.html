@@ -38,7 +38,7 @@
     <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
       <a href="index.html" class="font-serif text-2xl tracking-[0.2em] text-brandDark uppercase">Ishiki</a>
       <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest text-brandMuted">
-        <a href="index.html#om" class="text-brandDark transition-colors border-b border-brandDark pb-1">Mød mig</a>
+        <a href="om-mig.html" class="text-brandDark transition-colors border-b border-brandDark pb-1">Mød mig</a>
         <a href="index.html#fokus" class="hover:text-brandDark transition-colors">Tilgang</a>
         <a href="index.html#metode" class="hover:text-brandDark transition-colors">Metode</a>
         <a href="index.html#reflektioner" class="hover:text-brandDark transition-colors">Reflektioner</a>
@@ -57,7 +57,7 @@
       </h1>
     </section>
 
-    <!-- Fotografía Principal (Sentado) -->
+    <!-- Fotografía Principal -->
     <section class="max-w-5xl mx-auto px-6 pb-20">
       <div class="overflow-hidden border border-brandBorder/40">
         <img 
@@ -80,7 +80,7 @@
       </div>
     </section>
 
-    <!-- Educación y Experiencia (Retícula) -->
+    <!-- Uddannelse & Erfaring -->
     <section class="border-t border-brandBorder/60 bg-brandCard py-24">
       <div class="max-w-5xl mx-auto px-6">
         
@@ -141,8 +141,8 @@
       </div>
     </section>
 
-    <!-- Kontakt Form -->
-    <section id="kontakt" class="bg-brandCard py-24">
+    <!-- Kontakt Form (Fondo adaptado a brandBg) -->
+    <section id="kontakt" class="bg-brandBg border-t border-brandBorder/60 py-24">
       <div class="max-w-3xl mx-auto px-6 text-center">
         <span class="text-xs uppercase tracking-[0.25em] text-brandMuted block mb-3">Tag kontakt</span>
         <h2 class="font-serif text-3xl sm:text-4xl text-brandDark font-normal mb-8">Klar til det første skridt?</h2>
@@ -157,19 +157,19 @@
         </div>
 
         <!-- Caja de formulario blanca -->
-        <div class="bg-brandBg border border-brandBorder/80 p-8 sm:p-12 text-left">
+        <div class="bg-white border border-brandBorder/80 p-8 sm:p-12 text-left shadow-sm">
           <form action="mailto:kontakt@ishiki.dk" method="POST" enctype="text/plain" class="space-y-6">
             <div>
               <label class="block text-xs uppercase tracking-widest text-brandMuted mb-2">Dit Navn</label>
-              <input type="text" name="Navn" required class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors">
+              <input type="text" name="Navn" required class="w-full bg-brandBg/40 border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors">
             </div>
             <div>
               <label class="block text-xs uppercase tracking-widest text-brandMuted mb-2">Din E-mail</label>
-              <input type="email" name="Email" required class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors">
+              <input type="email" name="Email" required class="w-full bg-brandBg/40 border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors">
             </div>
             <div>
               <label class="block text-xs uppercase tracking-widest text-brandMuted mb-2">Hvad ønsker du støtte til?</label>
-              <textarea name="Besked" rows="5" required placeholder="Beskriv kort din situation..." class="w-full bg-white border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors resize-y"></textarea>
+              <textarea name="Besked" rows="5" required placeholder="Beskriv kort din situation..." class="w-full bg-brandBg/40 border border-brandBorder px-4 py-3 text-sm text-brandDark focus:outline-none focus:border-brandDark transition-colors resize-y"></textarea>
             </div>
             <div class="pt-4">
               <button type="submit" class="w-full bg-brandDark text-white py-4 text-xs uppercase tracking-widest hover:bg-black transition-colors">
